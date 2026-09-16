@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>清新任务清单</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <p class="eyebrow">Simple Frontend Demo</p>
+      <h1>清新任务清单</h1>
+      <p class="subtitle">一个使用 HTML、CSS 和 JavaScript 编写的简单前端网页项目。</p>
+    </section>
+
+    <section class="card todo-card">
+      <div class="card-header">
+        <div>
+          <h2>今日待办</h2>
+          <p id="dateText">加载日期中...</p>
+        </div>
+        <span class="badge" id="countBadge">0 项</span>
+      </div>
+
+      <form id="todoForm" class="todo-form">
+        <input id="todoInput" type="text" placeholder="输入一个新任务，例如：学习 CSS Grid" autocomplete="off" />
+        <button type="submit">添加</button>
+      </form>
+
+      <ul id="todoList" class="todo-list"></ul>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
